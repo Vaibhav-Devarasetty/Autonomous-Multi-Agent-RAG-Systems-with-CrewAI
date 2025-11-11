@@ -6,28 +6,6 @@ import base64
 st.set_page_config(page_title="Essay Writer Chat Bot", page_icon="🤖")
 st.image("./media/cover.jpg", use_column_width=True)
 
-button_html = f'''
-    <div style="display: flex; justify-content: center;">
-        <a href="https://buymeacoffee.com/mesutduman" target="_blank">
-            <button style="
-                background-color: #FFDD00;
-                border: none;
-                color: black;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                border-radius: 10px;
-                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            ">
-            ☕ Buy Me a Coffee
-            </button>
-        </a>
-    </div>
-'''
 
 if "messages" not in st.session_state:
     st.session_state.messages =  [{"role": "assistant", "content": "Hello!"}]
@@ -38,7 +16,7 @@ with st.sidebar:
     st.info(" * This app uses the OpenAI API to generate text, please provide your API key."
             "\n\n * This app uses the 'gpt-4o-mini-2024-07-18' model. Cost effective and efficient."
             "\n\n * If you don't have an API key, you can get one [here](https://platform.openai.com/signup)."
-            "\n\n * You can also find the source code for this app [here](https://github.com/mesutdmn/Autonomous-Multi-Agent-Systems-with-CrewAI-Essay-Writer)"
+            "\n\n * You can also find the source code for this app [here](https://github.com/Vaibhav-Devarasetty/Autonomous-Multi-Agent-RAG-Systems-with-CrewAI)"
             "\n\n * App keys are not stored or saved in any way."
             "\n\n * Writing essay may take some time, please be patient. Approximately 1-2 minutes."
             "\n\n * If you like this app, consider buying me a coffee ☕")
@@ -67,7 +45,6 @@ with st.sidebar:
     if st.button("Initialize Agents", type="primary"):
         st.session_state.app = initialize_agents()
     st.divider()
-    st.markdown(button_html, unsafe_allow_html=True)
 
 app = st.session_state.app
 def generate_response(topic):
