@@ -33,8 +33,8 @@ Autonomous-Multi-Agent-Systems-with-CrewAI-Essay-Writer
 ### 📦 **Installation**:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mesutdmn/Autonomous-Multi-Agent-Systems-with-CrewAI-Essay-Writer.git
-   cd Autonomous-Multi-Agent-Systems-with-CrewAI-Essay-Writer
+   git clone https://github.com/Vaibhav-Devarasetty/Autonomous-Multi-Agent-RAG-Systems-with-CrewAI.git
+   cd Autonomous-Multi-Agent-RAG-Systems-with-CrewAI
    ```
 2. Install the dependencies:
    ```bash
@@ -51,7 +51,5 @@ Autonomous-Multi-Agent-Systems-with-CrewAI-Essay-Writer
    streamlit run app.py
    ```
 2. Open your browser and go to `http://localhost:8501` to interact with the interface and generate essays based on your input.
-
-📄 **License**: This project is licensed under the MIT License.
 
 ---
